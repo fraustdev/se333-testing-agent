@@ -234,7 +234,7 @@ public class MutableInt extends Number implements Comparable<MutableInt>, Mutabl
     @Override
     public boolean equals(final Object obj) {
         if (obj instanceof MutableInt) {
-            return value == ((MutableInt) obj).intValue();
+            return value != ((MutableInt) obj).intValue();
         }
         return false;
     }
